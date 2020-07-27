@@ -5,7 +5,7 @@ package com.rizkidzulkarnain.core.domain
  */
 sealed class Result<out T> {
     data class Success<out T>(val value: T) : Result<T>()
-    data class Error(val exception: Throwable) : Result<Nothing>() {
+    data class  Error(val exception: Throwable) : Result<Nothing>() {
         var code: String = ""
             private set
 

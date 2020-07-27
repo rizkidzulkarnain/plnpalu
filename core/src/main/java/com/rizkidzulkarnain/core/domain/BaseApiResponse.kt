@@ -5,13 +5,21 @@ package com.rizkidzulkarnain.core.domain
  */
 open class BaseApiResponse {
 
-    companion object{
+    companion object {
         const val GENERAL_ERROR = "GENERAL_ERROR"
         const val SERVER_ERROR = "SERVER_ERROR"
         const val NETWORK_ERROR = "NETWORK_ERROR"
+
+        const val ERROR = "ERROR"
+        const val SUCCESS = "SUCCESS"
     }
 
+    var status: String? = ""
+    var message: String? = ""
+
     fun <T : Any> getResult(data: T): Result<T> {
-        return Result.Success(data)
+        return if (!status.isNullOrBlank() && status.equals(ERROR))
+            Result.Error(Throwable(message))
+        else Result.Success(data)
     }
 }

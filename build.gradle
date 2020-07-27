@@ -41,6 +41,14 @@ ext{
 
     lottieVersion = "3.3.1"
     glide = "4.11.0"
+    easyPermissions = "3.0.0"
+    googlePlayService = "18.0.0"
+    googlePlayServiceAuth = "18.1.0"
+    googlePlayServiceBase = "17.3.0"
+    googlePlayServiceMap = "17.0.0"
+    googlePlayServiceLocation = "17.0.0"
+    multidexVersion = "2.0.1"
+    multidexSupportVersion = "1.0.3"
 }
 
 task clean(type: Delete) {

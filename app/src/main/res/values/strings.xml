@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">plnpalu</string>
+    <string name="app_name">APP JARDIS</string>
+    <string name="title_activity_main_map">MainMapActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_way_point">Way Point</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="location_permission_setting_positive">Nyalakan</string>
+    <string name="location_permission_setting_negative">Tidak, Lain kali</string>
+    <string name="location_permission_setting_title">Nyalakan layanan lokasi?</string>
+    <string name="location_permission_setting_description">Untuk dapat menjalankan aplikasi ini, nyalakan GPS anda !</string>
+    <string name="location_permission_play_service_not_installed">Google Play Service Not Installed</string>
+
+    <string name="network_error_message">Ada kendala di koneksi anda, silahkan periksa kembali !</string>
+    <string name="general_error_message">Terdapat gangguan sistem kami, silahkan coba beberapa saat lagi !</string>
+
+    <string name="window_info_marker_title">Info Material</string>
+    <string name="window_info_marker_material">%d. %s</string>
 </resources>

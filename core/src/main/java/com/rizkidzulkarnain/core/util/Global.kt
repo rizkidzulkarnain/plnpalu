@@ -6,6 +6,6 @@ package com.rizkidzulkarnain.core.util
 
 class Global {
     companion object {
-        val BASE_URL = "https://api.themoviedb.org/3/"
+        const val BASE_URL = "http://pln-up2ksulteng.com/"
     }
 }

@@ -3,7 +3,6 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
-
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -14,6 +13,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -23,6 +23,23 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    androidExtensions {
+        experimental = true
     }
 }
 
@@ -42,6 +59,28 @@ dependencies {
 
     /*lottie loading*/
     implementation "com.airbnb.android:lottie:$rootProject.lottieVersion"
+
+    /*easy permission*/
+    implementation "pub.devrel:easypermissions:$rootProject.easyPermissions"
+
+    /*multi dex*/
+    implementation "androidx.multidex:multidex:$rootProject.multidexVersion"
+    implementation "com.android.support:multidex:$rootProject.multidexSupportVersion"
+
+    /*google play services*/
+    implementation "com.google.android.gms:play-services-base:$rootProject.googlePlayServiceBase"
+    implementation "com.google.android.gms:play-services-maps:$rootProject.googlePlayServiceMap"
+    implementation "com.google.android.gms:play-services-location:$rootProject.googlePlayServiceLocation"
+    implementation "com.google.android.gms:play-services-appinvite:$rootProject.googlePlayService"
+    implementation "com.google.android.gms:play-services-auth:$rootProject.googlePlayServiceAuth"
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.1.0'
+    implementation 'androidx.navigation:navigation-ui:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'

@@ -7,4 +7,132 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="LocationTheme" parent="@style/Theme.MaterialComponents.Light.Dialog.Alert.Bridge">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextLightGrayNormal" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="TextLightGrayNormal.12sp">
+        <item name="android:textSize">@dimen/text_12sp</item>
+    </style>
+
+    <style name="TextLightGrayNormal.14sp">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+
+    <style name="TextLightGrayNormal.16sp">
+        <item name="android:textSize">@dimen/text_16sp</item>
+    </style>
+
+    <style name="TextLightGrayBold" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="TextLightGrayBold.12sp">
+        <item name="android:textSize">@dimen/text_12sp</item>
+    </style>
+
+    <style name="TextLightGrayBold.14sp">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+
+    <style name="TextLightGrayBold.16sp">
+        <item name="android:textSize">@dimen/text_16sp</item>
+    </style>
+
+    <style name="TextLightGrayBold.20sp">
+        <item name="android:textSize">@dimen/text_20sp</item>
+    </style>
+
+    <style name="TextBlackBold" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/black_35405a</item>
+    </style>
+
+    <style name="TextBlackBold.12sp">
+        <item name="android:textSize">@dimen/text_12sp</item>
+    </style>
+
+    <style name="TextBlackBold.14sp">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+
+    <style name="TextBlackBold.16sp">
+        <item name="android:textSize">@dimen/text_16sp</item>
+    </style>
+
+    <style name="TextBlackBold.20sp">
+        <item name="android:textSize">@dimen/text_20sp</item>
+    </style>
+
+    <style name="TextBlackBold.44sp">
+        <item name="android:textSize">@dimen/text_44sp</item>
+    </style>
+
+    <style name="TextLightGrayF4F5F9" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/gray_F4F5F9</item>
+    </style>
+
+    <style name="TextLightGrayF4F5F9.12sp">
+        <item name="android:textSize">@dimen/text_12sp</item>
+    </style>
+
+    <style name="TextLightGrayF4F5F9.14sp">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+
+    <style name="TextLightGrayF4F5F9.16sp">
+        <item name="android:textSize">@dimen/text_16sp</item>
+    </style>
+
+    <style name="TextLightGrayF4F5F9.18sp">
+        <item name="android:textSize">@dimen/text_18sp</item>
+    </style>
+
+    <style name="TextLightGrayF4F5F9.20sp">
+        <item name="android:textSize">@dimen/text_20sp</item>
+    </style>
+
+    <style name="TextLightBlueNormal" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/blue_2CABE2</item>
+    </style>
+
+    <style name="TextLightBlueNormal.12sp">
+        <item name="android:textSize">@dimen/text_12sp</item>
+    </style>
+
+    <style name="TextLightOrangeMedium" parent="android:TextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/orange_FEAB2D</item>
+    </style>
+
+    <style name="TextLightOrangeMedium.20sp">
+        <item name="android:textSize">@dimen/text_20sp</item>
+    </style>
+
+    <style name="TextLightOrangeMedium.24sp">
+        <item name="android:textSize">@dimen/text_24sp</item>
+    </style>
 </resources>
